@@ -1,0 +1,149 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* global styling */
+.pri-bg-col{
+    background-color: #2487ce !important;
+}
+.pri-text-col{
+    color: #2487ce !important;
+}
+.pri-btn-ol-col{
+    border-color: #2487ce !important;
+}
+.sec-bg-col{
+    background-color: #124265 !important;
+}
+.sec-text-col{
+    color: #124265 !important;
+}
+.sec-btn-ol-col{
+    border-color: #124265 !important;
+}
+.card-zoom{
+    transition: all ease-in-out 0.5s;
+}
+.card-zoom:hover{
+    transform: scale(1.09);
+}
+.card-zoom:hover h5{
+    color:  #2487ce !important;
+    cursor: pointer;
+}
+.bg{
+    background:url(./images/WhatsApp_Image_2023-09-21_at_11.46.40.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.bg::before{
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.zen{
+    z-index: 100 !important;
+}
+.bar:hover{
+    color: #2487ce!important;
+}
+.about-btn:hover{
+    background-color: #2487ce;
+    color: white!important;
+}
+.test-col{
+    background-color: #f3f9fd!important;
+}
+
+/* swipper style */
+.swiper {
+    width: 100%;
+   
+  }
+.action-button:hover{
+    background-color: #fff;
+    color: #2487ce!important;
+    font-family: 'Raleway', sans-serif !important;
+  }
+/* bootstrap mansory */
+.card-eff:hover .test{
+    transform: scale(1);
+    opacity: 1;
+}
+.test{
+    
+    height: 100%;
+    width: 100%;
+    background-color: #2487ce94;
+    transform: scale(0.8);
+    opacity: 0;
+    transition:all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.card-eff::before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    z-index: 50;
+    opacity: 0;
+    transition:all ease-in-out 0.3s;
+}
+
+.card-eff:hover::before{
+    opacity: 1;
+}
+.card-eff::after{
+    content: '';
+    position: absolute;
+ bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    z-index: 50;
+    opacity: 0;
+    transition:all ease-in-out 0.3s;
+}
+.card-eff:hover::after{
+    opacity: 1;
+    
+}
+.member{
+   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+} 
+.social-icon{
+    opacity: 0;
+    background-color:rgba(255, 255, 255, 0.852);
+    transition: all ease-in-out 0.3s;
+ 
+} 
+.member:hover .social-icon{
+    opacity: 1;
+}
+#Pricing button:hover{
+    background-color: #2487ce;
+    color: #fff!important;
+}
+#Pricing .button-two:hover{
+    background-color: #fff;
+    color: #2487ce!important;
+
+}
+#Contact .icon:hover{
+    background-color: #2487ce;
+    
+}
